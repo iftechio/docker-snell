@@ -1,6 +1,6 @@
 FROM alpine:edge AS builder
 RUN apk add zip wget
-ENV VERSION=v2.0.1
+ENV VERSION=v2.0.3
 RUN wget -nv https://github.com/surge-networks/snell/releases/download/${VERSION}/snell-server-${VERSION}-linux-amd64.zip && unzip snell-server-*.zip
 
 FROM debian:stable-slim
